@@ -182,7 +182,7 @@ function hapusMahasiswa(npm) {
     const konfirmasi = confirm(`Apakah anda yakin ingin menghapus data mahasiswa: \n ${mhs.nama} (${npm})?`);
     if(konfirmasi) {
         dataMahasiswa = dataMahasiswa.filter(item => item.npm !== nim);
-        renderTable(dataMahasisjjjwa);
+        renderTable(dataMahasiswa);
         showAlert(`Data mahasiswa dengan NPM ${npm} berhasil dihapus dari sistem.`, "info");
     }
 }
